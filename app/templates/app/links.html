@@ -1,0 +1,15 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+    <a href="https://spbdnevnik.ru/news/2019-10-16/chto-nuzhno-znat-o-manikyure-i-nogtyah-interesnye-fakty" target="_blank"> <img src="{% static 'app/content/manic.png' %}" class="images" alt="manic" /></a>
+    <a href="https://billionnews.ru/9537-interesnye-fakty-o-kosmetologii.html" target="_blank"> <img src="{% static 'app/content/cosm.png' %}" class="images" alt="cosm" /></a>
+    <a href="https://volosy-volosy.ru/interesnye-fakty-o-volosah/" target="_blank"> <img src="{% static 'app/content/hair.png' %}" class="images" alt="hair" /></a>
+    <a href="https://onedio.ru/news/12-interesnyh-faktov-o-brovyah-kotorye-dolzhny-znat-vse-18123" target="_blank"> <img src="{% static 'app/content/brow.png' %}" class="images" alt="brow" /></a>
+    <a href="https://panor.ru/articles/pirsing-tolko-fakty/16589.html" target="_blank"> <img src="{% static 'app/content/pirs.png' %}" class="images" alt="pirs" /></a>
+    <a href="https://www.gastronom.ru/text/interesnye-fakty-o-solyarii-kak-zagorat-v-solyarii-1004877"> <img src="{% static 'app/content/sun.png' %}" class="images" alt="sun" /></a>
+{% endblock %}

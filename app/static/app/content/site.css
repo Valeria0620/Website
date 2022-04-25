@@ -1,0 +1,153 @@
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: white;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: white;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+#im {
+    width: 60px;
+    height: 60px;
+}
+
+.images {
+    width: 186px;
+    height: 186px;
+}
+
+h1 {
+    text-align: center;
+    color: deeppink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr {
+    color: pink;
+    height: 2px;
+    background-color: pink;
+}
+
+h2 {
+    text-align: center;
+    color: lightpink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ul {
+    color: white;
+    font-weight: 300;
+    text-align: left;
+}
+
+h3 {
+    color: lightpink;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: white;
+    background-color: pink;
+}
+
+.img {
+    width: 350px;
+    height: 350px;
+}
+
+.formmy textarea {
+    resize: none;
+}
+
+.sub {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    width: 90px;
+    height: 40px;
+    }
+
+body {
+    background-image: url( mal.jpg);
+    color: white;
+}
+
+a {
+    color: white; 
+}
+
+a:visited {
+    color: pink;
+}
+
+a:active {
+    color: pink; 
+}
+
+a:hover {
+    color: pink;
+}
+
+h5 {
+    color: deeppink;
+    text-align: left;
+}
+
+
+
+
+
+    
+

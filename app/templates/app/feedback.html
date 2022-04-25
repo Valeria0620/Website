@@ -1,0 +1,103 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% if form != None %}
+<br><h2>Оставьте свой отзыв</h2><br>
+<div class="formmy">
+    <form method="post">
+        {% csrf_token %}
+        <label for="{{form.name.id_for_label }}">{{ form.name.label }}:</label>
+        {{ form.name }}<br><br>
+        <label for="{{form.gender.id_for_label }}">{{ form.gender.label }}:</label>
+        {{ form.gender }}<br><br>
+        <label for="{{form.internet.id_for_label }}">{{ form.internet.label }}:</label>
+        {{ form.internet }}<br><br>
+        <label for="{{form.massage.id_for_label }}">{{ form.massage.label }}:</label>
+        {{ form.massage }}<br><br>
+        <label for="{{form.notice.id_for_label }}">{{ form.notice.label }}:</label>
+        {{ form.notice }}<br><br>
+        <label for="{{form.email.id_for_label }}">{{ form.email.label }}:</label>
+        {{ form.email }}<br><br>
+        <input id="bSub" type="submit" value="Отправить" class="sub">
+    </form>
+</div>
+{% else %}
+<br><h2>Благодарим за ваш отзыв!</h2>
+<h3>Вы написали следующее:</h3>
+<ul>
+    <li> <span>Имя:</span> {{ data.name }}</li>
+    <li> <span>Пол:</span> {{ data.gender }}</li>
+    <li> <span>Процедура:</span> {{ data.internet }}</li>
+    <li> <span>Отзыв:</span> {{ date.massage }}</li>
+    <li> <span>Получать новости салона на e-mail:</span> {{ data.notice }}</li>
+    <li> <span> Ваш e-mail:</span> {{ data.email }}</li>
+</ul>
+{% endif %}
+
+<script>
+
+function my_focus1()
+{
+    $('#my1').css('background-color', 'LightPink');
+}
+function my_blur1()
+{
+    $('#my1').css('background-color', 'white');
+}
+
+function my_focus2()
+{
+    $('#my2').css('background-color', 'LightPink');
+}
+function my_blur2()
+{
+    $('#my2').css('background-color', 'white');
+}
+
+function my_focus3()
+{
+    $('#my3').css('background-color', 'LightPink');
+}
+function my_blur3()
+{
+    $('#my3').css('background-color', 'white');
+}
+
+function my_focus4()
+{
+    $('#my4').css('background-color', 'LightPink');
+}
+function my_blur4()
+{
+    $('#my4').css('background-color', 'white');
+    }
+
+
+function bSub_mouseover()
+{
+    $('#bSub').css('background-color', 'Pink');
+    $('#bSub').css('color', 'black');
+}
+function bSub_mouseout()
+{
+    $('#bSub').css('background-color', 'white');
+    $('#bSub').css('color', 'Deeppink');
+}
+$('#my1').focus(my_focus1);
+$('#my1').blur(my_blur1);
+
+$('#my2').focus(my_focus2);
+$('#my2').blur(my_blur2);
+
+
+$('#my3').focus(my_focus3);
+$('#my3').blur(my_blur3);
+
+$('#my4').focus(my_focus4);
+    $('#my4').blur(my_blur4);
+
+$('#bSub').mouseover(bSub_mouseover);
+$('#bSub').mouseout(bSub_mouseout);
+
+</script>
+{% endblock %}
